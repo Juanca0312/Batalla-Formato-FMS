@@ -1,0 +1,36 @@
+.fondo{
+    background-image: url("../../images/yeis.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.fullheight{
+    height: 100%;
+}
+.si{
+    height: 98vh;
+}
+.container-fluid{
+    height: 100%;
+  width: 100%;
+  margin: 0px; padding: 0px;
+  min-width: 200px;
+}
+.padd {
+    padding: 0!important;
+    margin: 0!important;
+}
+.titulo {
+  height: 90%;  
+}
+.cuerpo {
+    height: 10%;
+}
+h1 {
+    font-family: 'Patua One', cursive;
+    font-size: 6rem;
+}
+p {
+    font-size:2rem;
+}
