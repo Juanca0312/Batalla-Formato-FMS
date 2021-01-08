@@ -1,6 +1,5 @@
 import React from 'react'
 import './inicio.css'
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
@@ -8,6 +7,11 @@ import { Carousel } from 'react-bootstrap';
 import Yeis from '../../images/yeis.jpg';
 import Trueno from '../../images/rayo.jfif';
 import Bnet from '../../images/benet.jpg';
+import {
+    Link
+  } from "react-router-dom";
+
+// rfc
 
 export default function inicio() {
     return (
@@ -15,7 +19,7 @@ export default function inicio() {
             <div className='container-fluid'>
                 <Row className='align-items-center fullheight padd'>
                     <Col xs={12} className='padd'>
-                        <Carousel interval="5000" controls={false} indicators={false}>
+                        <Carousel interval={5000} controls={false} indicators={false}>
 
                             <Carousel.Item className='si'>
                                 <img
@@ -34,7 +38,12 @@ export default function inicio() {
                                             <Row className='cuerpo'>
                                                 <Col xs={12} className='padd'>
                                                     <p>Elige a tus freestylers</p>
-                                                    <Button>Empezar</Button>
+                                                    <Link to="/selecgallo">
+                                                        <Button type="button">
+                                                            Empezar
+                                                        </Button>
+                                                    </Link>
+                                                    {/* <Button to='/selecgallo'>Empezar</Button> */}
                                                 </Col>
 
                                             </Row>
@@ -64,7 +73,11 @@ export default function inicio() {
                                             <Row className='cuerpo'>
                                                 <Col xs={12} className='padd'>
                                                     <p>Elige a tus freestylers</p>
-                                                    <Button>Empezar</Button>
+                                                    <Link to="/selecgallo">
+                                                        <Button type="button">
+                                                            Empezar
+                                                        </Button>
+                                                    </Link>
                                                 </Col>
 
                                             </Row>
@@ -93,7 +106,11 @@ export default function inicio() {
                                             <Row className='cuerpo'>
                                                 <Col xs={12} className='padd'>
                                                     <p>Elige a tus freestylers</p>
-                                                    <Button>Empezar</Button>
+                                                    <Link to="/selecgallo">
+                                                        <Button type="button">
+                                                            Empezar
+                                                        </Button>
+                                                    </Link>
                                                 </Col>
 
                                             </Row>
