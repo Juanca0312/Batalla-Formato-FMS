@@ -11,15 +11,17 @@
 .si{
     height: 98vh;
 }
-.container-fluid{
+.fondo{
     height: 100%;
-  width: 100%;
+  width: 100%!important;
   margin: 0px; padding: 0px;
   min-width: 200px;
 }
 .padd {
     padding: 0!important;
     margin: 0!important;
+    border: 0!important;
+    width: 100%;
 }
 .titulo {
   height: 90%;  

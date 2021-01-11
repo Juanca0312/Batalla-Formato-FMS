@@ -16,7 +16,7 @@ import {
 export default function inicio() {
     return (
         <>
-            <div className='container-fluid'>
+            <div className='container-fluid fondo'>
                 <Row className='align-items-center fullheight padd'>
                     <Col xs={12} className='padd'>
                         <Carousel interval={5000} controls={false} indicators={false}>

@@ -10,7 +10,6 @@ import {
 function App() {
   return (
     <Router>
-      <div>
         <Switch>
           <Route path="/selecgallo">
             <SelecGallo />
@@ -19,7 +18,6 @@ function App() {
             <Inicio />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }
