@@ -1,0 +1,22 @@
+.alto{
+    height: 100%;
+}
+.full-back{
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+.titulos{
+    font-family: 'Patua One', cursive;
+    color: #FFF;
+    font-size: 3rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

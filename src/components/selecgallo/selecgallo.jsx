@@ -5,7 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Fondo from '../../images/fondo.jpg';
-import  Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
+import {
+    Link
+  } from "react-router-dom";
 
 
 export default function Selecgallo() {
@@ -26,18 +29,23 @@ export default function Selecgallo() {
         let pais = e.target.value;
         if (pais === "ARGENTINA") {
             setCountry(argentina);
+            setGallo2("PAPO");
         }
         if (pais === "PERU") {
             setCountry(peru);
+            setGallo2("NEKROSS");
         }
         if (pais === "CHILE") {
             setCountry(chile);
+            setGallo2("NITRO");
         }
         if (pais === "MEXICO") {
             setCountry(mexico);
+            setGallo2("LOBO ESTEPARIO");
         }
         if (pais === "ESPAÑA") {
             setCountry(espana);
+            setGallo2("BNET");
         }
     }
 
@@ -83,7 +91,7 @@ export default function Selecgallo() {
                     <h1>Elige tus Gallos</h1>
                 </Col>
             </Row>
-            
+
             <Row>
                 <Col xs={12}>
                     <Form.Group controlId="exampleForm.ControlSelect1">
@@ -105,11 +113,15 @@ export default function Selecgallo() {
                     {country.length > 0 ? <Gallo2 /> : null}
                 </Col>
             </Row>
-            
+
 
             <Row className="justify-content-center mt-5" >
                 <Col xs='auto'>
-                    <Button>EMPEZAR</Button>
+                    <Link to="/round1">
+                        <Button type="button">
+                            Empezar
+                        </Button>
+                    </Link>
                 </Col>
             </Row>
 
